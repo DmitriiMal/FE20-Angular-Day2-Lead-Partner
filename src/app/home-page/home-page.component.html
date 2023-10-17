@@ -1,0 +1,25 @@
+<div class="container my-5">
+  <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+    <div *ngFor="let car of cars" class="my-3">
+      <div class="card my-card">
+        <img src="{{ car.img }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ car.mark }} {{ car.model }}</h5>
+          <p class="card-text">{{ car.shortDescription() }}</p>
+          <a
+            href="#{{ car.model }}"
+            data-bs-toggle="collapse"
+            class="btn btn-light my-btn"
+            >See more</a
+          >
+          <div class="collapse" id="{{ car.model }}">
+            <div class="mt-2">
+              {{ car.description() }}
+              <h6>Price: {{ car.price }}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
