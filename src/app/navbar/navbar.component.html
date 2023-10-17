@@ -23,13 +23,10 @@
           <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
       </ul>
-      <button (click)="countClick()" class="btn btn-light btn-sm me-3">
+      <button (click)="countClick()" class="btn btn-light btn-sm mx-3">
         Donate {{ donate }}€
       </button>
       <h5 *ngIf="donate >= 200">You are "VIP"</h5>
     </div>
   </div>
 </nav>
-
-<!-- contact page  -->
-<!-- add new car to the cars array -->

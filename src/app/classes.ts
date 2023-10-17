@@ -21,7 +21,7 @@ class Vehicle {
   consumption: number;
   price: number;
   wheels?: number;
-  img: string;
+  img?: string;
 
   constructor(
     mark: string,
@@ -298,7 +298,7 @@ class Bus extends Vehicle {
 const passengerCar1 = new PassengerCar(
   'Toyota',
   'Camry',
-  'Blue',
+  'Dark gray',
   50000,
   5,
   'Petrol',
@@ -307,14 +307,14 @@ const passengerCar1 = new PassengerCar(
   30,
   20000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VG95b3RhJTIwQ2Ftcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1400&q=60',
   4,
   'Front-Wheel Drive'
 );
 const passengerCar2 = new PassengerCar(
   'Honda',
   'Civic',
-  'Red',
+  'White',
   40000,
   5,
   'Petrol',
@@ -323,14 +323,14 @@ const passengerCar2 = new PassengerCar(
   28,
   18000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://cdn.pixabay.com/photo/2017/08/07/10/34/honda-2602415_1280.jpg',
   4,
   'Front-Wheel Drive'
 );
 const passengerCar3 = new PassengerCar(
   'Ford',
   'Focus',
-  'Silver',
+  'Blue',
   35000,
   5,
   'Petrol',
@@ -339,7 +339,7 @@ const passengerCar3 = new PassengerCar(
   26,
   16000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1661030190013-4d6d2a8d2c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxGb3JkJTIwRm9jdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60',
   4,
   'Front-Wheel Drive'
 );
@@ -355,7 +355,7 @@ const passengerCar4 = new PassengerCar(
   25,
   15000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://cdn.pixabay.com/photo/2020/06/04/19/44/chevy-5260229_1280.jpg',
   4,
   'Front-Wheel Drive'
 );
@@ -371,14 +371,14 @@ const passengerCar5 = new PassengerCar(
   24,
   14000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://cdn.pixabay.com/photo/2015/08/11/22/33/nissan-885308_1280.jpg',
   4,
   'Front-Wheel Drive'
 );
 const passengerCar6 = new PassengerCar(
   'Kia',
   'Optima',
-  'Gray',
+  'Yellow',
   20000,
   5,
   'Petrol',
@@ -387,310 +387,310 @@ const passengerCar6 = new PassengerCar(
   22,
   13000,
   4,
-  'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+  'https://images.unsplash.com/photo-1671051972813-89ffaf83ee08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80',
   4,
   'Front-Wheel Drive'
 );
 
 // Creating 6 Truck objects
-const truck1 = new Truck(
-  'Volvo',
-  'FH16',
-  'Red',
-  100000,
-  2,
-  'Diesel',
-  2018,
-  'Used',
-  12,
-  80000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Concrete mixer',
-  30000,
-  2
-);
-const truck2 = new Truck(
-  'Mercedes-Benz',
-  'Actros',
-  'Blue',
-  90000,
-  2,
-  'Diesel',
-  2017,
-  'Used',
-  11,
-  75000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Truck crane',
-  28000,
-  1
-);
-const truck3 = new Truck(
-  'Scania',
-  'R-series',
-  'Green',
-  80000,
-  2,
-  'Diesel',
-  2016,
-  'Used',
-  10,
-  70000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Flatbed/Tarpaulin',
-  32000,
-  0
-);
-const truck4 = new Truck(
-  'MAN',
-  'TGX',
-  'Yellow',
-  70000,
-  2,
-  'Diesel',
-  2015,
-  'Used',
-  9,
-  65000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Other',
-  34000,
-  0
-);
-const truck5 = new Truck(
-  'Iveco',
-  'Stralis',
-  'Orange',
-  60000,
-  2,
-  'Diesel',
-  2014,
-  'Used',
-  8,
-  60000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Tipper trailers',
-  31000,
-  2
-);
-const truck6 = new Truck(
-  'Kenworth',
-  'W990',
-  'Purple',
-  50000,
-  2,
-  'Diesel',
-  2013,
-  'Used',
-  7,
-  55000,
-  8,
-  'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Flatbed/Tarpaulin',
-  30000,
-  0
-);
+// const truck1 = new Truck(
+//   'Volvo',
+//   'FH16',
+//   'Red',
+//   100000,
+//   2,
+//   'Diesel',
+//   2018,
+//   'Used',
+//   12,
+//   80000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Concrete mixer',
+//   30000,
+//   2
+// );
+// const truck2 = new Truck(
+//   'Mercedes-Benz',
+//   'Actros',
+//   'Blue',
+//   90000,
+//   2,
+//   'Diesel',
+//   2017,
+//   'Used',
+//   11,
+//   75000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Truck crane',
+//   28000,
+//   1
+// );
+// const truck3 = new Truck(
+//   'Scania',
+//   'R-series',
+//   'Green',
+//   80000,
+//   2,
+//   'Diesel',
+//   2016,
+//   'Used',
+//   10,
+//   70000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Flatbed/Tarpaulin',
+//   32000,
+//   0
+// );
+// const truck4 = new Truck(
+//   'MAN',
+//   'TGX',
+//   'Yellow',
+//   70000,
+//   2,
+//   'Diesel',
+//   2015,
+//   'Used',
+//   9,
+//   65000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Other',
+//   34000,
+//   0
+// );
+// const truck5 = new Truck(
+//   'Iveco',
+//   'Stralis',
+//   'Orange',
+//   60000,
+//   2,
+//   'Diesel',
+//   2014,
+//   'Used',
+//   8,
+//   60000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Tipper trailers',
+//   31000,
+//   2
+// );
+// const truck6 = new Truck(
+//   'Kenworth',
+//   'W990',
+//   'Purple',
+//   50000,
+//   2,
+//   'Diesel',
+//   2013,
+//   'Used',
+//   7,
+//   55000,
+//   8,
+//   'https://images.unsplash.com/photo-1586191552066-d52dd1e3af86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Flatbed/Tarpaulin',
+//   30000,
+//   0
+// );
 
-// Creating 6 Motorbike objects
-const motorbike1 = new Motorbike(
-  'Harley-Davidson',
-  'Sportster',
-  'Black',
-  15000,
-  2,
-  'Petrol',
-  2021,
-  'New',
-  45,
-  12000,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'V-twin'
-);
-const motorbike2 = new Motorbike(
-  'Kawasaki',
-  'Ninja',
-  'Green',
-  12000,
-  2,
-  'Petrol',
-  2020,
-  'New',
-  40,
-  11000,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'Inline-four'
-);
-const motorbike3 = new Motorbike(
-  'Ducati',
-  'Panigale',
-  'Red',
-  10000,
-  2,
-  'Petrol',
-  2019,
-  'Used',
-  35,
-  10000,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'V-twin'
-);
-const motorbike4 = new Motorbike(
-  'BMW',
-  'S1000RR',
-  'Blue',
-  8000,
-  2,
-  'Petrol',
-  2018,
-  'Used',
-  30,
-  9500,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'Inline-four'
-);
-const motorbike5 = new Motorbike(
-  'Suzuki',
-  'GSX-R1000',
-  'Yellow',
-  6000,
-  2,
-  'Petrol',
-  2017,
-  'Used',
-  28,
-  9000,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'Inline-four'
-);
-const motorbike6 = new Motorbike(
-  'Yamaha',
-  'R1',
-  'White',
-  4000,
-  2,
-  'Petrol',
-  2016,
-  'Used',
-  25,
-  8500,
-  2,
-  'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-  'Rear-Wheel Drive',
-  'Inline-four'
-);
+// // Creating 6 Motorbike objects
+// const motorbike1 = new Motorbike(
+//   'Harley-Davidson',
+//   'Sportster',
+//   'Black',
+//   15000,
+//   2,
+//   'Petrol',
+//   2021,
+//   'New',
+//   45,
+//   12000,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'V-twin'
+// );
+// const motorbike2 = new Motorbike(
+//   'Kawasaki',
+//   'Ninja',
+//   'Green',
+//   12000,
+//   2,
+//   'Petrol',
+//   2020,
+//   'New',
+//   40,
+//   11000,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'Inline-four'
+// );
+// const motorbike3 = new Motorbike(
+//   'Ducati',
+//   'Panigale',
+//   'Red',
+//   10000,
+//   2,
+//   'Petrol',
+//   2019,
+//   'Used',
+//   35,
+//   10000,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'V-twin'
+// );
+// const motorbike4 = new Motorbike(
+//   'BMW',
+//   'S1000RR',
+//   'Blue',
+//   8000,
+//   2,
+//   'Petrol',
+//   2018,
+//   'Used',
+//   30,
+//   9500,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'Inline-four'
+// );
+// const motorbike5 = new Motorbike(
+//   'Suzuki',
+//   'GSX-R1000',
+//   'Yellow',
+//   6000,
+//   2,
+//   'Petrol',
+//   2017,
+//   'Used',
+//   28,
+//   9000,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'Inline-four'
+// );
+// const motorbike6 = new Motorbike(
+//   'Yamaha',
+//   'R1',
+//   'White',
+//   4000,
+//   2,
+//   'Petrol',
+//   2016,
+//   'Used',
+//   25,
+//   8500,
+//   2,
+//   'https://images.unsplash.com/photo-1609630875171-b1321377ee65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW90b3JiaWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+//   'Rear-Wheel Drive',
+//   'Inline-four'
+// );
 
-// Creating 6 Bus objects
-const bus1 = new Bus(
-  'Mercedes-Benz',
-  'Sprinter',
-  'White',
-  80000,
-  20,
-  'Diesel',
-  2017,
-  'Used',
-  8,
-  50000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
-const bus2 = new Bus(
-  'Volkswagen',
-  'Crafter',
-  'Blue',
-  75000,
-  18,
-  'Diesel',
-  2016,
-  'Used',
-  7,
-  48000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
-const bus3 = new Bus(
-  'Ford',
-  'Transit',
-  'Green',
-  70000,
-  16,
-  'Diesel',
-  2015,
-  'Used',
-  6,
-  45000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
-const bus4 = new Bus(
-  'Iveco',
-  'Daily',
-  'Yellow',
-  65000,
-  14,
-  'Diesel',
-  2014,
-  'Used',
-  5,
-  42000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
-const bus5 = new Bus(
-  'Renault',
-  'Master',
-  'Orange',
-  60000,
-  12,
-  'Diesel',
-  2013,
-  'Used',
-  4,
-  40000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
-const bus6 = new Bus(
-  'Peugeot',
-  'Boxer',
-  'Purple',
-  55000,
-  10,
-  'Diesel',
-  2012,
-  'Used',
-  3,
-  38000,
-  6,
-  'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
-  'Yes',
-  'Yes'
-);
+// // Creating 6 Bus objects
+// const bus1 = new Bus(
+//   'Mercedes-Benz',
+//   'Sprinter',
+//   'White',
+//   80000,
+//   20,
+//   'Diesel',
+//   2017,
+//   'Used',
+//   8,
+//   50000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
+// const bus2 = new Bus(
+//   'Volkswagen',
+//   'Crafter',
+//   'Blue',
+//   75000,
+//   18,
+//   'Diesel',
+//   2016,
+//   'Used',
+//   7,
+//   48000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
+// const bus3 = new Bus(
+//   'Ford',
+//   'Transit',
+//   'Green',
+//   70000,
+//   16,
+//   'Diesel',
+//   2015,
+//   'Used',
+//   6,
+//   45000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
+// const bus4 = new Bus(
+//   'Iveco',
+//   'Daily',
+//   'Yellow',
+//   65000,
+//   14,
+//   'Diesel',
+//   2014,
+//   'Used',
+//   5,
+//   42000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
+// const bus5 = new Bus(
+//   'Renault',
+//   'Master',
+//   'Orange',
+//   60000,
+//   12,
+//   'Diesel',
+//   2013,
+//   'Used',
+//   4,
+//   40000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
+// const bus6 = new Bus(
+//   'Peugeot',
+//   'Boxer',
+//   'Purple',
+//   55000,
+//   10,
+//   'Diesel',
+//   2012,
+//   'Used',
+//   3,
+//   38000,
+//   6,
+//   'https://images.unsplash.com/photo-1596979240348-970331045946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHxCdXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
+//   'Yes',
+//   'Yes'
+// );
 
 // console.log(passengerCar1);
 

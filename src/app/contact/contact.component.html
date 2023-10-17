@@ -1,1 +1,55 @@
-<p>contact works!</p>
+<div class="container mt-5">
+  <form
+    class="row row-colls-1 row-colls-md-2"
+    [formGroup]="info"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="row row-colls-sm-1 row-colls-md-2">
+      <label>
+        Mark:
+        <input type="text" formControlName="mark" />
+      </label>
+      <label>
+        Model:
+        <input type="text" formControlName="model" />
+      </label>
+      <label>
+        Color:
+        <input type="text" formControlName="color" />
+      </label>
+      <label>
+        Mileage:
+        <input type="text" formControlName="mileage" />
+      </label>
+      <label>
+        Number of seats:
+        <input type="number" formControlName="seatsNumber" />
+      </label>
+      <label>
+        Fuel type:
+        <input type="text" formControlName="fuelType" />
+      </label>
+      <label>
+        Year of production:
+        <input type="number" formControlName="year" />
+      </label>
+      <label>
+        Condition:
+        <input type="text" formControlName="condition" />
+      </label>
+      <label>
+        Fuel consumption:
+        <input type="number" formControlName="consumption" />
+      </label>
+      <label>
+        Price:
+        <input type="number" formControlName="price" />
+      </label>
+      <label>
+        Image:
+        <input type="text" formControlName="img" />
+      </label>
+      <input type="submit" class="btn btn-primary" value="Submit" />
+    </div>
+  </form>
+</div>
