@@ -53,30 +53,31 @@ class Vehicle {
     vehiclesArr.push(this);
   }
 
-  shortDescription() {
-    return `
-    <ul>
-    <li>Condition: ${this.condition}</li>
-    <li>Color: ${this.color}</li>
-    <li>Mileage: ${this.mileage} km</li>
-    <li>Year of production: ${this.year}</li>
-    </ul>
-    `;
-  }
+  // shortDescription() {
+  //   return `
+  //   <ul>
+  //   <li>Condition: ${this.condition}</li>
+  //   <li>Color: ${this.color}</li>
+  //   <li>Mileage: ${this.mileage} km</li>
+  //   <li>Year of production: ${this.year}</li>
+  //   </ul>
+  //   `;
+  // }
 
-  description() {
-    return `
-    <ul>
-    <li>number of seats: ${this.seatsNumber}</li>
-    <li>Fuel type: ${this.fuelType}</li>
-    <li>Fuel consumption: ${this.consumption} liter/km</li>
-    </ul>
-    `;
-    // <li>Condition: ${this.condition}</li>
-    // <li>Color: ${this.color}</li>
-    // <li>Mileage: ${this.mileage}</li>
-    // <li>Year of production: ${this.year}</li>
-  }
+  // description() {
+  //   const func2: any = document.querySelectorAll('.func2');
+  //   func2.innerHTML += `
+  //   <ul>
+  //   <li>number of seats: ${this.seatsNumber}</li>
+  //   <li>Fuel type: ${this.fuelType}</li>
+  //   <li>Fuel consumption: ${this.consumption} liter/km</li>
+  //   </ul>
+  //   `;
+  // <li>Condition: ${this.condition}</li>
+  // <li>Color: ${this.color}</li>
+  // <li>Mileage: ${this.mileage}</li>
+  // <li>Year of production: ${this.year}</li>
+  //   }
 }
 // /////////// Passenger car /////////// //
 
@@ -163,19 +164,19 @@ class Truck extends Vehicle {
 
     truckArr.push(this);
   }
-  override description() {
-    return `
-    <ul>
-    <li>Type: ${this.type}</li>
-    <li>Capacity: ${this.capacity}</li>
-    <li>Year of production: ${this.year}</li>
-    <li>Fuel type: ${this.fuelType}</li>
-    <li>Winches: ${this.winches}</li>
-    </ul>
-    `;
-    // <li>Condition: ${this.condition}</li>
-    // <li>Mileage: ${this.mileage}</li>
-  }
+  // override description() {
+  //   return `
+  //   <ul>
+  //   <li>Type: ${this.type}</li>
+  //   <li>Capacity: ${this.capacity}</li>
+  //   <li>Year of production: ${this.year}</li>
+  //   <li>Fuel type: ${this.fuelType}</li>
+  //   <li>Winches: ${this.winches}</li>
+  //   </ul>
+  //   `;
+  // <li>Condition: ${this.condition}</li>
+  // <li>Mileage: ${this.mileage}</li>
+  // }
 }
 
 // /////////// Motorbike /////////// //
@@ -219,19 +220,19 @@ class Motorbike extends Vehicle {
 
     motorbikeArr.push(this);
   }
-  override description() {
-    return `
-    <ul>
-    <li>Fuel type: ${this.fuelType}</li>
-    <li>Тumber of wheels: ${this.wheels}</li>
-    <li>Drive: ${this.drive}</li>
-    <li>Motor: ${this.motor}</li>
-    </ul>
-    `;
-    // <li>Condition: ${this.condition}</li>
-    // <li>Mileage: ${this.mileage}</li>
-    // <li>Year of production: ${this.year}</li>
-  }
+  // override description() {
+  //   return `
+  //   <ul>
+  //   <li>Fuel type: ${this.fuelType}</li>
+  //   <li>Тumber of wheels: ${this.wheels}</li>
+  //   <li>Drive: ${this.drive}</li>
+  //   <li>Motor: ${this.motor}</li>
+  //   </ul>
+  //   `;
+  // <li>Condition: ${this.condition}</li>
+  // <li>Mileage: ${this.mileage}</li>
+  // <li>Year of production: ${this.year}</li>
+  // }
 }
 
 // /////////// Bus /////////// //
@@ -274,19 +275,19 @@ class Bus extends Vehicle {
 
     busArr.push(this);
   }
-  override description() {
-    return `
-    <ul>
-    <li>number of seats: ${this.seatsNumber}</li>
-    <li>Luggage rack: ${this.luggageRack}</li>
-    <li>Reading lights: ${this.readingLights}</li>
-    </ul>
-    `;
-    // <li>Condition: ${this.condition}</li>
-    // <li>Color: ${this.color}</li>
-    // <li>Mileage: ${this.mileage}</li>
-    // <li>Year of production: ${this.year}</li>
-  }
+  // override description() {
+  //   return `
+  //   <ul>
+  //   <li>number of seats: ${this.seatsNumber}</li>
+  //   <li>Luggage rack: ${this.luggageRack}</li>
+  //   <li>Reading lights: ${this.readingLights}</li>
+  //   </ul>
+  //   `;
+  // <li>Condition: ${this.condition}</li>
+  // <li>Color: ${this.color}</li>
+  // <li>Mileage: ${this.mileage}</li>
+  // <li>Year of production: ${this.year}</li>
+  // }
 }
 
 // /////////////////////////////// //

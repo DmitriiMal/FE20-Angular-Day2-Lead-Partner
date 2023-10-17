@@ -5,17 +5,26 @@
         <img src="{{ car.img }}" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">{{ car.mark }} {{ car.model }}</h5>
-          <p class="card-text">{{ car.shortDescription() }}</p>
+          <p class="card-text my-1">Condition: {{ car.condition }}</p>
+          <p class="card-text my-1">Color: {{ car.color }}</p>
+          <p class="card-text my-1">Mileage: {{ car.mileage }}</p>
+          <p class="card-text my-1">Year of production: {{ car.year }}</p>
           <a
             href="#{{ car.model }}"
             data-bs-toggle="collapse"
-            class="btn btn-light my-btn"
+            class="btn btn-light mt-2 my-btn"
             >See more</a
           >
           <div class="collapse" id="{{ car.model }}">
-            <div class="mt-2">
-              {{ car.description() }}
-              <h6>Price: {{ car.price }}</h6>
+            <div class="mt-2 func2">
+              <p class="card-text my-1">
+                Number of seats: {{ car.seatsNumber }}
+              </p>
+              <p class="card-text my-1">Fuel type: {{ car.fuelType }}</p>
+              <p class="card-text my-1">
+                Fuel consumption: {{ car.consumption }}
+              </p>
+              <h5 class="mt-2">Price: {{ car.price }}</h5>
             </div>
           </div>
         </div>
